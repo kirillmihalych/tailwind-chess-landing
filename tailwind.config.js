@@ -11,7 +11,7 @@ export default {
         padding: '1.5rem',
       },
       backgroundImage: {
-        'main-375': "url('src/assets/images/bg-chess-375.png')",
+        'main-375': "url('src/assets/images/bg-chess-375.jpg')",
         'main-1366': "url('src/assets/images/bg-chess-1366.png')",
         'main-1920': "url('src/assets/images/bg-chess-1920.png')",
       },

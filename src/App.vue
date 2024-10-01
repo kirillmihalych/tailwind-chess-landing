@@ -1,10 +1,10 @@
 <template>
-  <div class="app">
+  <div class="app relative overflow-hidden">
     <div
-      class="relative overflow-x-hidden min-h-screen md:min-h-[760px] bg-main-375 md:bg-main-1366 2xl:bg-main-1920 bg-bottom-center bg-cover bg-no-repeat xl:bg-right"
+      class="h-[700px] bg-main-375 md:bg-main-1366 2xl:bg-main-1920 bg-bottom-center bg-cover bg-no-repeat xl:bg-right"
     >
       <section class="container xl:px-18 2xl:px-80 pt-[1.125rem] xl:pt-7 grid md:justify-start">
-        <div class="container-content">
+        <div class="content-wrapper">
           <header
             class="font-golos font-bold text-[14.42px] md:text-[16.65px] text-main-100 leading-[1.08] uppercase flex gap-0.5 xl:gap-[6px] items-center"
           >
@@ -41,17 +41,19 @@
           </nav>
         </div>
       </section>
-      <section
-        class="absolute bottom-0 md:-bottom-10 h-10 bg-highlight text-white font-merriweather uppercase leading-small py-3.5"
-      >
-        <ul class="list-disc list-inside flex items-center gap-4 px-3 whitespace-nowrap w-max">
-          <li class="list-outside">Дело помощи утопающим — дело рук самих утопающих!</li>
-          <li>Шахматы двигают вперед не только культуру, но и экономику!</li>
-          <li>Лед тронулся, господа присяжные заседатели!</li>
-          <li></li>
-        </ul>
-      </section>
     </div>
+    <!-- reusable component -->
+    <section
+      class="absolute bottom-0 md:static bg-highlight text-white font-merriweather uppercase leading-small py-3.5"
+    >
+      <ul class="list-disc list-inside flex items-center gap-4 px-3 whitespace-nowrap w-max">
+        <li class="list-outside">Дело помощи утопающим — дело рук самих утопающих!</li>
+        <li>Шахматы двигают вперед не только культуру, но и экономику!</li>
+        <li>Лед тронулся, господа присяжные заседатели!</li>
+        <li></li>
+      </ul>
+    </section>
+    <!-- reusable component -->
   </div>
 </template>
 
