@@ -1,0 +1,14 @@
+/* Merriweather font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Golos text';
+    src: url(fonts/GolosTextWoff2.woff2) format('woff2');
+    font-display: swap;
+  }
+}
