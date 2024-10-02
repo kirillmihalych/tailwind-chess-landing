@@ -1,5 +1,5 @@
 <template>
-  <div class="app relative overflow-hidden">
+  <div class="app overflow-hidden">
     <div
       class="h-[700px] bg-main-375 md:bg-main-1366 2xl:bg-main-1920 bg-bottom-center bg-cover bg-no-repeat xl:bg-right"
     >
@@ -44,7 +44,7 @@
     </div>
     <!-- reusable component -->
     <section
-      class="absolute bottom-0 md:static bg-highlight text-white font-merriweather uppercase leading-small py-3.5"
+      class="-translate-y-full md:translate-y-0 bg-highlight text-white font-merriweather uppercase leading-small py-3.5"
     >
       <ul class="list-disc list-inside flex items-center gap-4 px-3 whitespace-nowrap w-max">
         <li class="list-outside">Дело помощи утопающим — дело рук самих утопающих!</li>
@@ -54,6 +54,84 @@
       </ul>
     </section>
     <!-- reusable component -->
+
+    <!--  -->
+    <section class="grid gap-9 mt-12 lg:mt-20">
+      <div
+        class="container grid gap-6 lg:gap-0 lg:place-items-center lg:grid-cols-3 lg:auto-rows-[75px] xl:auto-rows-[80px]"
+      >
+        <p
+          class="font-merriweather text-2.5xl xl:text-4xl leading-snug text-main-200 uppercase lg:col-start-1 lg:row-start-1 lg:col-span-2"
+        >
+          Чтобы поддержать Международный васюкинский турнир
+        </p>
+        <img
+          src="../src/assets/images/chess-players-375.png"
+          alt="a group of chess players are playing"
+          class="lg:col-start-3 lg:row-start-1 lg:row-span-2"
+        />
+        <p
+          class="font-merriweather text-2.5xl xl:text-4xl leading-snug text-main-200 uppercase lg:col-start-1 lg:col-span-2 lg:row-start-2"
+        >
+          посетите лекцию на тему: <span class="text-highlight font-bold">«Плодотворная дебютная идея»</span>
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-auto-1fr lg:mt-16 lg:gap-11">
+        <div>
+          <img
+            src="../src/assets/images/chess-player-think-375.png"
+            alt="a chess player is thinking"
+            class="w-[475px]"
+          />
+        </div>
+        <div class="container font-golos">
+          <p class="font-merriweather text-2.5xl xl:text-4xl leading-snug text-main-200 uppercase mt-6">
+            и Сеанс
+            <span class="text-highlight font-bold">одновременной игры в шахматы на 160 досках</span> гроссмейстера
+            О. Бендера
+          </p>
+          <!-- table like -->
+          <ul
+            class="text-xl leading-tight text-main-200 font-semibold mt-11 lg:before:content-[' '] lg:before:block lg:before:border-l-2 lg:before:h-full lg:before:absolute lg:relative lg:before:left-[45%]"
+          >
+            <li
+              class="after:content-[' '] after:block after:border-[1px] after:my-4 lg:flex lg:items-center lg:flex-wrap after:w-full"
+            >
+              <p class="opacity-70 font-normal flex-1">Место проведения:</p>
+              <p class="mt-3 flex-1 lg:mt-0">Клуб «Картонажник»</p>
+            </li>
+            <li
+              class="after:content-[' '] after:block after:border-[1px] after:my-4 lg:flex lg:items-center lg:flex-wrap after:w-full"
+            >
+              <p class="opacity-70 font-normal flex-1">Дата и время мероприятия:</p>
+              <p class="mt-3 lg:mt-0 flex-1">22 июня 1927 г. в 18:00</p>
+            </li>
+            <li
+              class="after:content-[' '] after:block after:border-[1px] after:my-4 lg:flex lg:items-center lg:flex-wrap after:w-full"
+            >
+              <p class="opacity-70 font-normal flex-1">Стоимость входных билетов:</p>
+              <p class="mt-3 lg:mt-0 flex-1">20 коп.</p>
+            </li>
+            <li
+              class="after:content-[' '] after:block after:border-[1px] after:my-4 lg:flex lg:items-center lg:flex-wrap after:w-full"
+            >
+              <p class="opacity-70 font-normal flex-1">Стоимость за игру:</p>
+              <p class="mt-3 lg:mt-0 flex-1">50 коп.</p>
+            </li>
+            <li class="lg:flex lg:items-center lg:flex-wrap after:w-full">
+              <p class="opacity-70 font-normal flex-1">Взнос на телеграммы:</p>
+              <p class="mt-3 flex-1 lg:mt-0">
+                <span class="line-through decoration-red-500">100 руб.</span><span> 21 руб. 16 коп.</span>
+              </p>
+            </li>
+          </ul>
+          <!-- table like -->
+          <a href="#" class="block text-link text-lg leading-tight mt-10">
+            По всем вопросам обращаться в администрацию к К. Михельсону
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

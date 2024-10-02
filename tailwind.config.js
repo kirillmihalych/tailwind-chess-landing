@@ -7,6 +7,9 @@ export default {
         golos: ['Golos text', 'sans-serif'],
         merriweather: ['Merriweather'],
       },
+      fontSize: {
+        '2.5xl': '1.75rem',
+      },
       container: {
         padding: '1.5rem',
       },
@@ -28,6 +31,7 @@ export default {
         black: '#1F1F1F',
         white: '#FFFFFF',
         highlight: '#F54932',
+        link: '#3057A2',
       },
       padding: {
         3.5: '0.625rem',
@@ -37,7 +41,13 @@ export default {
       margin: {
         15: '3.875rem',
       },
+      screen: {
+        'extra-sm': '480px',
+      },
+      gridTemplateColumns: {
+        'auto-1fr': 'auto, 1fr',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-logical')],
 }
