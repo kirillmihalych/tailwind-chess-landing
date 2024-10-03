@@ -8,7 +8,15 @@ export default {
         merriweather: ['Merriweather'],
       },
       fontSize: {
-        '2.5xl': '1.75rem',
+        // Perfect fourth scale
+        300: 'clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem)',
+        400: 'clamp(0.88rem, 0.83rem + 0.24vw, 1rem)',
+        500: 'clamp(1.09rem, 1rem + 0.47vw, 1.33rem)',
+        600: 'clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem)',
+        700: 'clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem)',
+        800: 'clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem)',
+        900: 'clamp(2.67rem, 2.07rem + 3vw, 4.21rem)',
+        1000: 'clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem)',
       },
       container: {
         padding: '1.5rem',
@@ -17,6 +25,7 @@ export default {
         'main-375': "url('src/assets/images/bg-chess-375.jpg')",
         'main-1366': "url('src/assets/images/bg-chess-1366.png')",
         'main-1920': "url('src/assets/images/bg-chess-1920.png')",
+        polotno: "url('src/assets/images/polotno.png')",
       },
       backgroundPosition: {
         'bottom-center': 'bottom center',
@@ -46,6 +55,7 @@ export default {
       },
       gridTemplateColumns: {
         'auto-1fr': 'auto, 1fr',
+        '1fr-1fr-auto': '1fr, 1fr, auto',
       },
     },
   },
